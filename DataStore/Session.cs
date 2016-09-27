@@ -13,5 +13,6 @@ namespace DataStore
         public List<Team> TeamList { get; set; }
         public List<Round> RoundList { get; set; }
         public List<Score> ScoreList { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }

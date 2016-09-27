@@ -9,7 +9,7 @@ namespace DataStore.Factories
 {
     public class SessionFactory
     {
-        public static Session BuildSessionFromId(int id, int year, string teamIdList, string roundIdList, string scoreIdList, SQLiteConnection dbConn)
+        /*public static Session BuildSessionFromId(int id, int year, string teamIdList, string roundIdList, string scoreIdList, SQLiteConnection dbConn)
         {            
             // Build list of teams.
             List<Team> teamList = new List<Team>();
@@ -48,8 +48,12 @@ namespace DataStore.Factories
             };
 
             return s;
-        }
+        }*/
 
-        
+        public static Session BuildNewSession()
+        {
+            Session s = new Session();
+            return s;
+        }
     }
 }
